@@ -16,13 +16,13 @@ action = ActionChains(driver)
 
 f_read = open("youtube_link/song_link.txt", "r", encoding='utf8')
 youtube_links = f_read.read().splitlines()
+driver.implicitly_wait(20)
 
 driver.get('https://ytmp3.cc/en13/')
 
 for link in youtube_links:
     element = driver.find_element_by_id("input")
     element.send_keys(link, Keys.ENTER)
-    driver.implicitly_wait(20)
     link_with_tag = driver.find_element(By.XPATH, '//a[text()="Download"]')
     link_with_tag.send_keys(Keys.ENTER)
     driver.get('https://ytmp3.cc/en13/')

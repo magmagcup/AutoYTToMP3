@@ -1,6 +1,6 @@
 Auto Youtube to MP3
 ===================
-Auto convert list of music name to mp3 via ytmp3.cc
+Auto convert list of music name to mp3 via selenium and ytmp3.cc
 
 Requirements
 ---------
@@ -23,5 +23,9 @@ Requirements
   
  How to run
  --------
- Run collectlink.py
+ - Install require packages by running the following cmd
+    ```
+    pip install -r requirements.txt
+    ```
+ - Run collectlink.py
      
