@@ -28,4 +28,6 @@ Requirements
     pip install -r requirements.txt
     ```
  - Run collectlink.py
+ - Wait
+ --------
      
